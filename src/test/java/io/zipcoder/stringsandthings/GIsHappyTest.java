@@ -30,10 +30,19 @@ public class GIsHappyTest {
         Assert.assertFalse(actual);
     }
 
+//    @Test
+//    public void gIsHappyTest3(){
+//        Boolean actual = stringsAndThings.gIsHappy("xxggyygxx");
+//        Assert.assertTrue(actual);
+//    }
+
+//    The above test shows the expected value of the boolean is true, but in fact it is false. The first set of 'g's in
+//    the expression are happy but the second instance of a g is unhappy. I have corrected the test below.
+
     @Test
     public void gIsHappyTest3(){
         Boolean actual = stringsAndThings.gIsHappy("xxggyygxx");
-        Assert.assertTrue(actual);
+        Assert.assertFalse(actual);
     }
 
 }
